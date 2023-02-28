@@ -82,7 +82,7 @@ function App() {
       
       {hasSearch ? 
         <Display />
-        : <>search a pokemon</>
+        : <h3>search a pokemon</h3>
         }
       
     </div>
