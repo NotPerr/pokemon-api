@@ -34,14 +34,35 @@ function App() {
 
   const Display = () => {
     return (
-      <div>
-        <img src={pokemon.sprites.front_default} alt={pokemon.name}/>
+      <div className='card'>
+        <div className='pic'>
+          <img src={`https://img.pokemondb.net/sprites/scarlet-violet/normal/${pokemon.name}.png`} alt={pokemon.name}/>
+        </div>
         <h3>{pokemon.name}</h3>
-        <p>type: {pokemon.types[0].type.name}</p>
-        <p>hp: {pokemon.stats[0].base_stat}</p>
-        <p>attack: {pokemon.stats[1].base_stat}</p>
-        <p>defense: {pokemon.stats[2].base_stat}</p>
-        <p>speed: {pokemon.stats[5].base_stat}</p>
+        <div className='content'>
+          
+          <div className='info'>
+            <p className='title'>type: </p>
+            <p>{pokemon.types[0].type.name}</p>
+          </div>
+          <div className='info'>
+            <p className='title'>hp: </p>
+            <p>{pokemon.stats[0].base_stat}</p>
+          </div>
+          <div className='info'>
+            <p className='title'>attack: </p>
+            <p>{pokemon.stats[1].base_stat}</p>
+          </div>
+          <div className='info'>
+            <p className='title'>defense: </p>
+            <p>{pokemon.stats[2].base_stat}</p>
+          </div>
+          <div className='info'>
+            <p className='title'>speed: </p>
+            <p>{pokemon.stats[5].base_stat}</p>
+          </div>
+        </div>
+        
       </div>
     )
   }
