@@ -48,14 +48,17 @@ function App() {
   
 
   return (
-    <div>
+    <div className='container'>
       
-      <div>
-        <br />
-        search pokemon: <input value={search} onChange={handleSearchChange}/>
+      <div className='input'>
+        <h1>search pokemon: </h1>
+        <div className='form'>
+          <input value={search} onChange={handleSearchChange}/>
+          <button className='btn' onClick={searchPokemon}>search</button>
+        </div>
       </div>
-      <button onClick={searchPokemon}>search</button>
-      <br/>
+      
+      
       {hasSearch ? 
         <Display />
         : <>search a pokemon</>
