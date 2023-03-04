@@ -14,4 +14,4 @@ To install the app, follow these steps:
 4. Start the app using `npm start`.
 5. The app will open in your default browser at `http://localhost:3000/`.
 
-<img src="preview.jpg" alt="preview image" width="2154" height="1580">
+<img src="preview.jpg" alt="preview image" width="718" height="527">
